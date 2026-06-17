@@ -1,9 +1,67 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="OyU5AaiipshpA-FLgRsU">
-    <mxGraphModel>
+    <mxGraphModel dx="1364" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Sn9vPwiLophh3SeHepYb-9" edge="1" parent="1" source="Sn9vPwiLophh3SeHepYb-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Sn9vPwiLophh3SeHepYb-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Read ADC signal and store to buffer" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-5" edge="1" parent="1" source="Sn9vPwiLophh3SeHepYb-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Sn9vPwiLophh3SeHepYb-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Store ADC signal to an array." vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-7" edge="1" parent="1" source="Sn9vPwiLophh3SeHepYb-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Sn9vPwiLophh3SeHepYb-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Apply LPF to signal" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-16" edge="1" parent="1" source="Sn9vPwiLophh3SeHepYb-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Sn9vPwiLophh3SeHepYb-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Transmit filtered signal through UART" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-10" edge="1" parent="1" source="Sn9vPwiLophh3SeHepYb-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Sn9vPwiLophh3SeHepYb-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="200" />
+              <mxPoint x="490" y="80" />
+            </Array>
+            <mxPoint x="480" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-11" edge="1" parent="1" source="Sn9vPwiLophh3SeHepYb-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Sn9vPwiLophh3SeHepYb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-8" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Buffer filled?" vertex="1">
+          <mxGeometry height="80" width="120" x="310" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-14" edge="1" parent="1" source="Sn9vPwiLophh3SeHepYb-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Sn9vPwiLophh3SeHepYb-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="660" />
+              <mxPoint x="490" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-15" edge="1" parent="1" source="Sn9vPwiLophh3SeHepYb-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Sn9vPwiLophh3SeHepYb-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="660" />
+              <mxPoint x="250" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sn9vPwiLophh3SeHepYb-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Transmit success?" vertex="1">
+          <mxGeometry height="80" width="120" x="310" y="620" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
